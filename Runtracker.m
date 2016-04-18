@@ -13,6 +13,8 @@ rand('state',0);
 addpath('./src');
 addpath('./input_img');
 %----------------------------------
+setInitPos(1);
+%----------------------------------
 load init.txt;
 initstate = init;%initial tracker
 %----------------------------Set path
