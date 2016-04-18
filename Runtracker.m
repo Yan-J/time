@@ -10,15 +10,16 @@ clc;clear all;close all;
 %----------------------------------
 rand('state',0);
 %----------------------------------
-addpath('./data');
+addpath('./src');
+addpath('./input_img');
 %----------------------------------
 load init.txt;
 initstate = init;%initial tracker
 %----------------------------Set path
-img_dir = dir('./data/*.png');
+img_dir = dir('./input_img/*.png');
 %---------------------------
 img = imread(img_dir(1).name);
-img = double(img(:,:,1));
+img = double(img(:,:,1));% convert uint8-->floating point
 %----------------------------------------------------------------
 trparams.init_negnumtrain = 50;%number of trained negative samples
 trparams.init_postrainrad = 4.0;%radical scope of positive samples
