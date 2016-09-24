@@ -69,4 +69,23 @@ margin-left: auto;
   padding-bottom: 100px;
 }
 
-
+.bt1 {
+  color:black;
+  font-size: 100px; 
+  margin-right: 100px;
+  margin-bottom: 25px;
+  margin-left: auto;
+}
+.bt2 {
+  color:black;
+  font-size: 100px; 
+  margin-right: auto;
+  margin-bottom: 25px;
+  margin-left:auto;
+}
+#show_less,#show_more
+{
+width:240px,
+height:180px;
+}
+#show_less{float:left;}
