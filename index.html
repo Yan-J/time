@@ -3,6 +3,20 @@
   <head>
       <title>Yan Jiang</title>
       <link rel="stylesheet" type="text/css" href="style.css">
+      <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js">
+      </script>
+    
+    <script>
+$(document).ready(function(){
+  $("#show_less").click(function(){
+    $("p").hide();
+  });
+    $("#show_more").click(function(){
+    $("p").show();
+  });
+});
+</script>
+ 
   </head>
    <body>
       <div class="bgd" id="bgd">
@@ -23,8 +37,15 @@
                         Dancing is her way to feel the beat in herself.
 Just keep up with the pace, and move!
 
- </p>               
-           </div>        
+ </p>         
+           <div id="show_less">
+             <input type="button" value="Show Less" class="bt1"/>
+          </div>
+           <div id="show_more">
+             <input type="button" value="Show More" class="bt2"/>
+          </div>
+             
+             </div>        
         </div>
        
    </body>
@@ -33,9 +54,7 @@ Just keep up with the pace, and move!
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
   })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
   ga('create', 'UA-84201617-1', 'auto');
   ga('send', 'pageview');
-
 </script>
 </html>
