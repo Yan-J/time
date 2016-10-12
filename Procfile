@@ -1,1 +1,1 @@
-gunicorn runserver:app
+web: python time.py
